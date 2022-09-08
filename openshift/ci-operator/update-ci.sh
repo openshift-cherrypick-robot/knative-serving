@@ -44,8 +44,7 @@ $CURDIR/generate-ci-config.sh knative-$VERSION 4.6 true false > ${CONFIG}__46.ya
 $CURDIR/generate-ci-config.sh knative-$VERSION 4.7 true false > ${CONFIG}__47.yaml
 $CURDIR/generate-ci-config.sh knative-$VERSION 4.8 true false > ${CONFIG}__48.yaml
 $CURDIR/generate-ci-config.sh knative-$VERSION 4.9 true false > ${CONFIG}__49.yaml
-$CURDIR/generate-ci-config.sh knative-$VERSION 4.11 true false true > ${CONFIG}__tls.yaml
-$CURDIR/generate-ci-config.sh knative-$VERSION 4.11 false true > ${CONFIG}__411.yaml
+$CURDIR/generate-ci-config.sh knative-$VERSION 4.11 false true true > ${CONFIG}__411.yaml
 
 # Append missing lines to the mirror file.
 if [[ "$VERSION" != "next" ]]; then
